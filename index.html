@@ -3,64 +3,555 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Subject List | HHS</title>
-  <style>
-    body { line-height: 2em; }
-    a { color: black; text-decoration: none; }
-
-    /* container */
-    #container { 
-      background-color: antiquewhite; 
-      margin: 30px; 
-      padding: 30px;
-    }
-    #container h1 {
-      margin-bottom: 60px;
-    }
-
-  </style>
+  <title>웹디자인 · 웹퍼블리싱 포트폴리오</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <div id="container">
-    <h1>Subject List | HHS</h1>
-    <h2>과제 목록</h2>
-    <ol>
-      
-      <li>기초
-        <ul>
-          <li><a href="./01_basic/과제1-1.html">과제1</a></li>
-          <li><a href="./01_basic/과제1-2.html">과제2</a></li>
-          <li><a href="./01_basic/과제1-3.html">과제3</a></li>
-          <li><a href="./01_basic/과제1-4.html">과제4</a></li>
-          <li><a href="./01_basic/과제1-5.html">과제5</a></li>
-          <li><a href="./01_basic/과제2-1.html">과제6</a></li>
-          <li><a href="./01_basic/과제2-2.html">과제7</a></li>
-          <li><a href="./01_basic/과제2-3.html">과제8</a></li>
-          <li><a href="./01_basic/과제2-4.html">과제9</a></li>
-          <li><a href="./01_basic/과제2-5.html">과제10</a></li>
-        </ul>
-      </li>
-      
-      <li>네임앵커
-        <ul>
-          <li><a href="./02_name_anchor/04_네임앵커.html">네임앵커4</a></li>
-          <li><a href="./02_name_anchor/05_네임앵커.html">네임앵커5</a></li>
-        </ul>
-      </li>
-      <li>텍스트
-        <ul>
-          <li><a href="./03_text/06_텍스트.html">텍스트6</a></li>
-          <li><a href="./03_text/07_텍스트.html">텍스트7</a></li>
-        </ul>
-      </li>
-      <li>중첩목록
-        <ul>
-          <li><a href="./04_nested_list/04_중첩목록.html">중첩목록4</a></li>
-          <li><a href="./04_nested_list/05_중첩목록.html">중첩목록5</a></li>
-        </ul>
-      </li>
-    </ol>
 
-  </div>
+  <!-- Header -->
+  <header>
+    <div id="container">
+      <h1 class="logo"><a href="#home">Portfolio</a></h1>
+      <nav aria-label="주요 메뉴">
+        <p>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#works">Works</a>
+          <a href="#contact">Contact</a>
+        </p>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home">
+      <div id="container">
+        <h2 class="hero-title">[이름을 입력해 주세요]</h2>
+        <p class="hero-subtitle">[한 줄 소개를 입력해 주세요]</p>
+        <p class="hero-text">
+          웹디자인 및 웹퍼블리싱을 학습 중인 퍼블리셔 지망생입니다.<br>
+          [자기소개를 입력해 주세요]
+        </p>
+        <p class="hero-links">
+          <a href="#works">작업물 보기</a>
+          <a href="#contact" class="btn-outline">연락처로 이동</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div id="container">
+        <h2 class="section-title">About</h2>
+        <p class="section-desc">학습 배경과 목표를 정리한 소개 영역입니다.</p>
+        <ul class="about-list">
+          <li>
+            <h3>자기소개</h3>
+            <p>[내용 입력 필요]</p>
+          </li>
+          <li>
+            <h3>학습 과정</h3>
+            <p>[내용 입력 필요]</p>
+          </li>
+          <li>
+            <h3>관심 분야</h3>
+            <p>[내용 입력 필요]</p>
+          </li>
+          <li>
+            <h3>현재 배우고 있는 내용</h3>
+            <p>[내용 입력 필요]</p>
+          </li>
+          <li>
+            <h3>앞으로의 목표</h3>
+            <p>[내용 입력 필요]</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <div id="container">
+        <h2 class="section-title">Skills</h2>
+        <p class="section-desc">학원 실습 자료에서 확인된 HTML·CSS 학습 내용입니다.</p>
+
+        <div class="skill-group">
+          <h3>HTML</h3>
+          <ul class="skill-tags">
+            <li>HTML5 문서 구조 (DOCTYPE, lang, charset, viewport)</li>
+            <li>제목 태그 (h1 ~ h3)</li>
+            <li>문단·구분선 (p, hr, br)</li>
+            <li>순서·비순서 목록 (ol, ul, li)</li>
+            <li>중첩 목록</li>
+            <li>정의 목록 (dl, dt, dd)</li>
+            <li>텍스트 강조 (b, i, strong, small)</li>
+            <li>텍스트 수정 표시 (ins, del, mark)</li>
+            <li>인용문 (blockquote)</li>
+            <li>첨자 (sub, sup)</li>
+            <li>ruby, meter, time 태그</li>
+            <li>address 태그</li>
+            <li>네임 앵커 링크 (id, href="#")</li>
+            <li>시맨틱 태그 개념 학습</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3>CSS</h3>
+          <ul class="skill-tags">
+            <li>외부 CSS 파일 연결</li>
+            <li>요소·id·자손 선택자</li>
+            <li>색상 (color, background-color)</li>
+            <li>여백 (margin, padding)</li>
+            <li>줄 간격 (line-height)</li>
+            <li>글자 크기 (font-size)</li>
+            <li>테두리 (border)</li>
+            <li>링크 스타일 (text-decoration)</li>
+            <li>목록 스타일 제거 (list-style)</li>
+            <li>CSS 그라데이션 배경</li>
+            <li>scroll-behavior</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Works -->
+    <section id="works">
+      <div id="container">
+        <h2 class="section-title">Works</h2>
+        <p class="section-desc">학원에서 작성한 HTML 실습·과제를 프로젝트 카드로 정리했습니다.</p>
+
+        <p class="works-note">
+          전체 과제 목록은 <a href="./subjects.html">subjects.html</a>에서 확인할 수 있습니다.
+        </p>
+
+        <h3 class="project-group-title">01. HTML 기초 과제</h3>
+
+        <!-- Project 01 -->
+        <article class="project-card">
+          <div class="project-thumb">
+            <p class="project-number">Project 01</p>
+            <p class="project-thumb-title">기업 소개 페이지</p>
+          </div>
+          <div class="project-body">
+            <h3>과제1-1 · 기업 소개</h3>
+            <p class="project-meta">유형: HTML 기초 마크업 · 파일: 01_basic/과제1-1.html</p>
+            <dl>
+              <dt>제작 목적</dt>
+              <dd>기업 소개 문서를 HTML로 구조화하는 연습</dd>
+              <dt>사용 기술</dt>
+              <dd>h1, hr, p, ol(type="I"), br, address, &copy;</dd>
+              <dt>주요 구현</dt>
+              <dd>핵심 경영 가치를 로마 숫자 순서 목록으로 작성하고, 하단에 address 태그로 연락처·저작권 표기</dd>
+              <dt>학습 내용</dt>
+              <dd>제목·문단·구분선·순서 목록·주소 정보 마크업</dd>
+            </dl>
+            <p class="project-link"><a href="./01_basic/과제1-1.html">과제 페이지 보기</a></p>
+          </div>
+        </article>
+
+        <!-- Project 02 -->
+        <article class="project-card">
+          <div class="project-thumb">
+            <p class="project-number">Project 02</p>
+            <p class="project-thumb-title">웹 퍼블리싱 용어 사전</p>
+          </div>
+          <div class="project-body">
+            <h3>과제1-2 · 용어 사전</h3>
+            <p class="project-meta">유형: HTML 기초 마크업 · 파일: 01_basic/과제1-2.html</p>
+            <dl>
+              <dt>제작 목적</dt>
+              <dd>웹 퍼블리싱 핵심 용어를 정의 목록으로 정리</dd>
+              <dt>사용 기술</dt>
+              <dd>dl, dt, dd, b, hr, p</dd>
+              <dt>주요 구현</dt>
+              <dd>HTML5, 웹 접근성, 시맨틱 태그 등 용어와 설명을 dt·dd 쌍으로 구성</dd>
+              <dt>학습 내용</dt>
+              <dd>정의 목록 작성법과 시맨틱 태그 개념 이해</dd>
+            </dl>
+            <p class="project-link"><a href="./01_basic/과제1-2.html">과제 페이지 보기</a></p>
+          </div>
+        </article>
+
+        <!-- Project 03 -->
+        <article class="project-card">
+          <div class="project-thumb">
+            <p class="project-number">Project 03</p>
+            <p class="project-thumb-title">교육 커리큘럼 안내</p>
+          </div>
+          <div class="project-body">
+            <h3>과제1-3 · 커리큘럼 안내</h3>
+            <p class="project-meta">유형: HTML 기초 마크업 · 파일: 01_basic/과제1-3.html</p>
+            <dl>
+              <dt>제작 목적</dt>
+              <dd>교육 과정 안내 페이지 작성</dd>
+              <dt>사용 기술</dt>
+              <dd>ul, li, p, b, i, address, br</dd>
+              <dt>주요 구현</dt>
+              <dd>비순서 목록 안에 단계별 설명 문단을 중첩하고, address로 교육장 정보 기재</dd>
+              <dt>학습 내용</dt>
+              <dd>목록과 문단을 함께 사용하는 구조 작성</dd>
+            </dl>
+            <p class="project-link"><a href="./01_basic/과제1-3.html">과제 페이지 보기</a></p>
+          </div>
+        </article>
+
+        <!-- Project 04 -->
+        <article class="project-card">
+          <div class="project-thumb">
+            <p class="project-number">Project 04</p>
+            <p class="project-thumb-title">단편 소설 읽기</p>
+          </div>
+          <div class="project-body">
+            <h3>과제1-4 · 소설 읽기</h3>
+            <p class="project-meta">유형: HTML 기초 마크업 · 파일: 01_basic/과제1-4.html</p>
+            <dl>
+              <dt>제작 목적</dt>
+              <dd>문학 콘텐츠를 제목 계층에 맞게 마크업</dd>
+              <dt>사용 기술</dt>
+              <dd>h1, h2, h3, p, br, hr</dd>
+              <dt>주요 구현</dt>
+              <dd>작품 제목(h2)과 본문 문단, 저작권 안내(h3)로 정보 위계 구성</dd>
+              <dt>학습 내용</dt>
+              <dd>제목 태그 순서와 줄바꿈 태그 활용</dd>
+            </dl>
+            <p class="project-link"><a href="./01_basic/과제1-4.html">과제 페이지 보기</a></p>
+          </div>
+        </article>
+
+        <!-- Project 05 -->
+        <article class="project-card">
+          <div class="project-thumb">
+            <p class="project-number">Project 05</p>
+            <p class="project-thumb-title">웹 표준 가이드라인</p>
+          </div>
+          <div class="project-body">
+            <h3>과제1-5 · 웹 표준 가이드</h3>
+            <p class="project-meta">유형: HTML 기초 마크업 · 파일: 01_basic/과제1-5.html</p>
+            <dl>
+              <dt>제작 목적</dt>
+              <dd>웹 표준 마크업 주의사항 안내 문서 작성</dd>
+              <dt>사용 기술</dt>
+              <dd>h2, ul, li, small, i, address, p</dd>
+              <dt>주요 구현</dt>
+              <dd>태그 중첩 오류 예시와 올바른 address 사용법을 목록·예시 코드로 설명</dd>
+              <dt>학습 내용</dt>
+              <dd>웹 표준 오류 방지와 address 태그 올바른 사용</dd>
+            </dl>
+            <p class="project-link"><a href="./01_basic/과제1-5.html">과제 페이지 보기</a></p>
+          </div>
+        </article>
+
+        <!-- Project 06 -->
+        <article class="project-card">
+          <div class="project-thumb">
+            <p class="project-number">Project 06</p>
+            <p class="project-thumb-title">IoT 대시보드 기획</p>
+          </div>
+          <div class="project-body">
+            <h3>과제2-1 · 프로젝트 개요</h3>
+            <p class="project-meta">유형: HTML 기초 마크업 · 파일: 01_basic/과제2-1.html</p>
+            <dl>
+              <dt>제작 목적</dt>
+              <dd>프로젝트 소개 문서를 HTML 구조로 작성</dd>
+              <dt>사용 기술</dt>
+              <dd>h1, h2, p, ul, ol, hr, address</dd>
+              <dt>주요 구현</dt>
+              <dd>개요·기능(ul)·기술 스택(ol) 섹션으로 정보 분류</dd>
+              <dt>학습 내용</dt>
+              <dd>순서·비순서 목록을 용도에 맞게 선택해 사용</dd>
+            </dl>
+            <p class="project-link"><a href="./01_basic/과제2-1.html">과제 페이지 보기</a></p>
+          </div>
+        </article>
+
+        <!-- Project 07 -->
+        <article class="project-card">
+          <div class="project-thumb">
+            <p class="project-number">Project 07</p>
+            <p class="project-thumb-title">카페 메뉴 소개</p>
+          </div>
+          <div class="project-body">
+            <h3>과제2-2 · 카페 소개</h3>
+            <p class="project-meta">유형: HTML 기초 마크업 · 파일: 01_basic/과제2-2.html</p>
+            <dl>
+              <dt>제작 목적</dt>
+              <dd>매장 메뉴와 이용 안내 페이지 작성</dd>
+              <dt>사용 기술</dt>
+              <dd>dl, dt, dd, ul, li, h2, address</dd>
+              <dt>주요 구현</dt>
+              <dd>시그니처 메뉴를 정의 목록으로, 영업 정보를 비순서 목록으로 구성</dd>
+              <dt>학습 내용</dt>
+              <dd>dl·ul을 함께 사용하는 실무형 마크업</dd>
+            </dl>
+            <p class="project-link"><a href="./01_basic/과제2-2.html">과제 페이지 보기</a></p>
+          </div>
+        </article>
+
+        <!-- Project 08 -->
+        <article class="project-card">
+          <div class="project-thumb">
+            <p class="project-number">Project 08</p>
+            <p class="project-thumb-title">UI/UX 과정 모집</p>
+          </div>
+          <div class="project-body">
+            <h3>과제2-3 · 모집 안내</h3>
+            <p class="project-meta">유형: HTML 기초 마크업 · 파일: 01_basic/과제2-3.html</p>
+            <dl>
+              <dt>제작 목적</dt>
+              <dd>교육 과정 모집 요강 페이지 작성</dd>
+              <dt>사용 기술</dt>
+              <dd>ol(type="A"), ul, b, h2, address</dd>
+              <dt>주요 구현</dt>
+              <dd>커리큘럼은 알파벳 순서 목록, 모집 요강은 강조(b)와 함께 비순서 목록으로 작성</dd>
+              <dt>학습 내용</dt>
+              <dd>ol type 속성과 텍스트 강조 태그 활용</dd>
+            </dl>
+            <p class="project-link"><a href="./01_basic/과제2-3.html">과제 페이지 보기</a></p>
+          </div>
+        </article>
+
+        <!-- Project 09 -->
+        <article class="project-card">
+          <div class="project-thumb">
+            <p class="project-number">Project 09</p>
+            <p class="project-thumb-title">이벤트 안내</p>
+          </div>
+          <div class="project-body">
+            <h3>과제2-4 · 이벤트 페이지</h3>
+            <p class="project-meta">유형: HTML 기초 마크업 · 파일: 01_basic/과제2-4.html</p>
+            <dl>
+              <dt>제작 목적</dt>
+              <dd>이벤트 참여 방법과 경품 안내 문서 작성</dd>
+              <dt>사용 기술</dt>
+              <dd>ol, ul, ins, b, small, p, hr</dd>
+              <dt>주요 구현</dt>
+              <dd>참여 단계(ol), 경품 목록(ul), 주의사항(small)으로 정보 구분</dd>
+              <dt>학습 내용</dt>
+              <dd>ins·small 태그로 변경·부가 정보 표현</dd>
+            </dl>
+            <p class="project-link"><a href="./01_basic/과제2-4.html">과제 페이지 보기</a></p>
+          </div>
+        </article>
+
+        <!-- Project 10 -->
+        <article class="project-card">
+          <div class="project-thumb">
+            <p class="project-number">Project 10</p>
+            <p class="project-thumb-title">기록 에세이</p>
+          </div>
+          <div class="project-body">
+            <h3>과제2-5 · 에세이 작성</h3>
+            <p class="project-meta">유형: HTML 기초 마크업 · 파일: 01_basic/과제2-5.html</p>
+            <dl>
+              <dt>제작 목적</dt>
+              <dd>블로그 형식의 글 작성과 페이지 내 링크 연습</dd>
+              <dt>사용 기술</dt>
+              <dd>blockquote, i, ins, id, a(href="#title")</dd>
+              <dt>주요 구현</dt>
+              <dd>인용문(blockquote), 해시태그(ins), id와 앵커 링크로 상단 이동</dd>
+              <dt>학습 내용</dt>
+              <dd>인용문 태그와 기본 앵커 링크 사용</dd>
+            </dl>
+            <p class="project-link"><a href="./01_basic/과제2-5.html">과제 페이지 보기</a></p>
+          </div>
+        </article>
+
+        <h3 class="project-group-title">02. 네임 앵커</h3>
+
+        <!-- Project 11 -->
+        <article class="project-card">
+          <div class="project-thumb">
+            <p class="project-number">Project 11</p>
+            <p class="project-thumb-title">인터넷 용어 사전</p>
+          </div>
+          <div class="project-body">
+            <h3>네임앵커4 · 알파벳 목차</h3>
+            <p class="project-meta">유형: 네임 앵커 · 파일: 02_name_anchor/04_네임앵커.html</p>
+            <dl>
+              <dt>제작 목적</dt>
+              <dd>긴 문서에서 알파벳별 바로가기 네임 앵커 구현</dd>
+              <dt>사용 기술</dt>
+              <dd>id, a(href="#A"~"#F"), b, hr, p</dd>
+              <dt>주요 구현</dt>
+              <dd>A~F 알파벳 링크로 각 섹션 이동, 섹션마다 "목록으로" 링크 제공</dd>
+              <dt>학습 내용</dt>
+              <dd>페이지 내 네임 앵커로 긴 콘텐츠 탐색 구조 만들기</dd>
+            </dl>
+            <p class="project-link"><a href="./02_name_anchor/04_네임앵커.html">과제 페이지 보기</a></p>
+          </div>
+        </article>
+
+        <!-- Project 12 -->
+        <article class="project-card">
+          <div class="project-thumb">
+            <p class="project-number">Project 12</p>
+            <p class="project-thumb-title">FAQ 네임 앵커</p>
+          </div>
+          <div class="project-body">
+            <h3>네임앵커5 · FAQ</h3>
+            <p class="project-meta">유형: 네임 앵커 · 파일: 02_name_anchor/05_네임앵커.html</p>
+            <dl>
+              <dt>제작 목적</dt>
+              <dd>질문 목록에서 답변 영역으로 이동하는 FAQ 구조 작성</dd>
+              <dt>사용 기술</dt>
+              <dd>ul, li, a, h2(id), h3(id)</dd>
+              <dt>주요 구현</dt>
+              <dd>질문 링크(#A1, #A2)와 답변 제목 id 연결, 답변 하단에 목록 복귀 링크</dd>
+              <dt>학습 내용</dt>
+              <dd>FAQ 형태의 네임 앵커 내비게이션</dd>
+            </dl>
+            <p class="project-link"><a href="./02_name_anchor/05_네임앵커.html">과제 페이지 보기</a></p>
+          </div>
+        </article>
+
+        <h3 class="project-group-title">03. 텍스트 태그</h3>
+
+        <!-- Project 13 -->
+        <article class="project-card">
+          <div class="project-thumb">
+            <p class="project-number">Project 13</p>
+            <p class="project-thumb-title">제품 성분 보고서</p>
+          </div>
+          <div class="project-body">
+            <h3>텍스트6 · 성분 분석</h3>
+            <p class="project-meta">유형: 텍스트 태그 · 파일: 03_text/06_텍스트.html</p>
+            <dl>
+              <dt>제작 목적</dt>
+              <dd>화학식·가격·수치 정보를 텍스트 태그로 표현</dd>
+              <dt>사용 기술</dt>
+              <dd>sub, sup, b, i, del, ins, mark, meter, time, address</dd>
+              <dt>주요 구현</dt>
+              <dd>화학식 첨자, 할인 가격(del/ins), 강조(mark), 진행률(meter), 작성일(time)</dd>
+              <dt>학습 내용</dt>
+              <dd>다양한 텍스트 의미 태그를 실무 문서에 적용</dd>
+            </dl>
+            <p class="project-link"><a href="./03_text/06_텍스트.html">과제 페이지 보기</a></p>
+          </div>
+        </article>
+
+        <!-- Project 14 -->
+        <article class="project-card">
+          <div class="project-thumb">
+            <p class="project-number">Project 14</p>
+            <p class="project-thumb-title">전시 기획 안내</p>
+          </div>
+          <div class="project-body">
+            <h3>텍스트7 · 기획전 소개</h3>
+            <p class="project-meta">유형: 텍스트 태그 · 파일: 03_text/07_텍스트.html</p>
+            <dl>
+              <dt>제작 목적</dt>
+              <dd>전시 안내 문서에 한자·각주·수정 표시 적용</dd>
+              <dt>사용 기술</dt>
+              <dd>ruby, rt, i, strong, sup, small, meter, mark, del, ins</dd>
+              <dt>주요 구현</dt>
+              <dd>한자 발음(ruby), 각주(sup), 일정 변경(del/ins), 관람 안내(mark)</dd>
+              <dt>학습 내용</dt>
+              <dd>ruby 태그와 각주·강조 텍스트 태그 조합</dd>
+            </dl>
+            <p class="project-link"><a href="./03_text/07_텍스트.html">과제 페이지 보기</a></p>
+          </div>
+        </article>
+
+        <h3 class="project-group-title">04. 중첩 목록</h3>
+
+        <!-- Project 15 -->
+        <article class="project-card">
+          <div class="project-thumb">
+            <p class="project-number">Project 15</p>
+            <p class="project-thumb-title">IT 커리큘럼</p>
+          </div>
+          <div class="project-body">
+            <h3>중첩목록4 · 교육 과정</h3>
+            <p class="project-meta">유형: 중첩 목록 · 파일: 04_nested_list/04_중첩목록.html</p>
+            <dl>
+              <dt>제작 목적</dt>
+              <dd>단계별 교육 내용을 중첩 목록으로 구조화</dd>
+              <dt>사용 기술</dt>
+              <dd>ul 중첩, ol, a, h2</dd>
+              <dt>주요 구현</dt>
+              <dd>기초 문법·반응형 웹 항목 아래 세부 주제를 ul로 중첩, 인기 강의는 ol로 순위 표시</dd>
+              <dt>학습 내용</dt>
+              <dd>중첩 목록으로 계층형 정보 표현</dd>
+            </dl>
+            <p class="project-link"><a href="./04_nested_list/04_중첩목록.html">과제 페이지 보기</a></p>
+          </div>
+        </article>
+
+        <!-- Project 16 -->
+        <article class="project-card">
+          <div class="project-thumb">
+            <p class="project-number">Project 16</p>
+            <p class="project-thumb-title">성장 가이드</p>
+          </div>
+          <div class="project-body">
+            <h3>중첩목록5 · 학습 로드맵</h3>
+            <p class="project-meta">유형: 중첩 목록 · 파일: 04_nested_list/05_중첩목록.html</p>
+            <dl>
+              <dt>제작 목적</dt>
+              <dd>프론트엔드 학습 단계와 세부 항목을 목록으로 정리</dd>
+              <dt>사용 기술</dt>
+              <dd>ol, ul 중첩, b, address, time, small</dd>
+              <dt>주요 구현</dt>
+              <dd>필수 학습 단계(ol)와 분야별 세부 내용(ul 중첩), 작성자 정보(address·time)</dd>
+              <dt>학습 내용</dt>
+              <dd>순서 목록과 중첩 비순서 목록을 함께 활용</dd>
+            </dl>
+            <p class="project-link"><a href="./04_nested_list/05_중첩목록.html">과제 페이지 보기</a></p>
+          </div>
+        </article>
+
+        <!-- Project 17 - Subject List -->
+        <article class="project-card">
+          <div class="project-thumb">
+            <p class="project-number">Project 17</p>
+            <p class="project-thumb-title">과제 목록 페이지</p>
+          </div>
+          <div class="project-body">
+            <h3>Subject List · 과제 모음</h3>
+            <p class="project-meta">유형: HTML + 인라인 CSS · 파일: subjects.html</p>
+            <dl>
+              <dt>제작 목적</dt>
+              <dd>학습 주제별 과제 링크를 한 페이지에서 모아 보기</dd>
+              <dt>사용 기술</dt>
+              <dd>ol, ul, a, style(인라인 CSS), #container 선택자</dd>
+              <dt>주요 구현</dt>
+              <dd>기초·네임앵커·텍스트·중첩목록 카테고리별 상대 경로 링크 목록, 배경색·여백 스타일 적용</dd>
+              <dt>학습 내용</dt>
+              <dd>상대 경로 링크 연결과 기본 CSS 선택자·여백·배경색</dd>
+            </dl>
+            <p class="project-link"><a href="./subjects.html">과제 목록 보기</a></p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div id="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-desc">연락 가능한 정보를 입력해 주세요.</p>
+        <div class="contact-box">
+          <dl>
+            <dt>이메일</dt>
+            <dd>[이메일을 입력해 주세요]</dd>
+            <dt>GitHub</dt>
+            <dd>[GitHub 주소를 입력해 주세요]</dd>
+          </dl>
+          <p class="contact-message">[간단한 연락 안내 문구를 입력해 주세요]</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div id="container">
+      <p>COPYRIGHT &copy; [이름을 입력해 주세요] ALL RIGHTS RESERVED.</p>
+      <p><a href="#home">맨 위로</a> · <a href="./subjects.html">과제 목록</a></p>
+    </div>
+  </footer>
+
 </body>
 </html>
